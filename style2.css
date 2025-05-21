@@ -202,6 +202,7 @@ body {
     @media (max-width: 768px) {
       body {
       font-size: 15px; /* original is 18px - base size for general text */
+      text-align: center;
     }
 
     h1 {
