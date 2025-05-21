@@ -201,7 +201,7 @@ body {
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 18px;
+        font-size: 21px; /* original is 18px */
       }
 
       nav {
@@ -210,12 +210,16 @@ body {
       }
 
       nav a {
-        font-size: 14px;
+        font-size: 17px; /* original is 14px */
       }
 
       .button {
-        font-size: 12px;
+        font-size: 12px; /* original is 15px */
         padding: 8px 16px;
+      }
+
+      p, main, .speech-bubble, .icon-label {
+            font-size: 16px; /* added this */
       }
 
       main {
@@ -243,7 +247,7 @@ body {
       }
 
       footer {
-        font-size: 8px;
+        font-size: 12px; /* original is 8px */
       }
     }
     
