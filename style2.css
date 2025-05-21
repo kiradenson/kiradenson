@@ -218,7 +218,7 @@ body {
     }
 
     .button {
-      font-size: 16px;
+      font-size: 21px; /* original is 16px */
       padding: 10px 18px;
     }
 
