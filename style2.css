@@ -218,12 +218,12 @@ body {
     }
 
     .button {
-      font-size: 18px; /* original is 16px */
+      font-size: 16px; /* original is 16px */
       padding: 10px 18px;
     }
 
     p, .speech-bubble, .icon-label {
-      font-size: 18px;
+      font-size: 17px; /* original is 18px */
     }
 
     main {
