@@ -201,7 +201,7 @@ body {
 
     @media (max-width: 768px) {
       body {
-      font-size: 18px; /* base size for general text */
+      font-size: 17px; /* original is 18px - base size for general text */
     }
 
     h1 {
