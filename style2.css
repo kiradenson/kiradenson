@@ -223,7 +223,7 @@ body {
     }
 
     p, .speech-bubble, .icon-label {
-      font-size: 17px; /* original is 18px */
+      font-size: 15px; /* original is 18px */
     }
 
     main {
