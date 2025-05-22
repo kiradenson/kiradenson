@@ -33,6 +33,7 @@ body {
     h1 {
       font-size: 24px;
       margin: 0;
+      color: #00c853; /* bright green main text */
       text-shadow: 2px 2px #fff600; /* bright yellow text shadow */
       flex: 1 0 100%;
     }
@@ -186,6 +187,72 @@ body {
       image-rendering: pixelated;
     }
 
+    .portfolio-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .divider {
+      clear: both;
+      margin: 30px auto;
+      height: 5px; /* original is 3px - thickness of lines */
+      background-color: #0074e8;
+      width: 80%;
+      border-radius: 2px;
+    }
+
+    .project-image {
+      /*float: left;*/
+      margin: 0 auto; /* margin: 10px 20px 10px 0; - top, right, bottom, left spacing */
+      width: 150px; /* original is 600px - way too big */
+      height: auto;
+      border: 3px solid #f92a7d; /* hot pink queue games image border */
+      border-radius: 8px; /* original is 8px */
+      transition: transform 0.3s ease;
+    }
+
+    .project-image:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+
+    #special-one {
+      border-color: #f92a7d; /* hot pink border */
+      width: 400px;           /* bigger size */
+      height: auto;
+    }
+
+    #special-one-parent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .project-figure {
+      width: 150px;
+      margin: 0 auto;
+      /* margin: 10px 20px 10x 0; */
+      /* float: left; */
+      text-align: center; /* change to center if you prefer */
+    }
+
+    .project-caption {
+      font-size: 12px;
+      color: #f92a7d; /* hot pink caption */
+      margin-top: 10px;
+      font-family: 'Press Start 2P', cursive;
+      line-height: 1.4;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;     /* Center the whole row */
+      gap: 40px;                   /* Space between the two images */
+      flex-wrap: wrap;             /* Responsive: stacks on small screens */
+      margin-top: 20px;
+    }
+
     footer {
       position: fixed;
       bottom: 0;
@@ -201,7 +268,7 @@ body {
 
     @media (max-width: 768px) {
       body {
-      font-size: 15px; /* original is 18px - base size for general text */
+      font-size: 15px; /* base size for general text */
       text-align: center;
     }
 
@@ -224,7 +291,7 @@ body {
     }
 
     p, .speech-bubble, .icon-label {
-      font-size: 15px; /* original is 18px */
+      font-size: 15px; /* original is 17px */
     }
 
     main {
@@ -247,7 +314,7 @@ body {
     }
 
     footer {
-      font-size: 12px;
+      font-size: 14px;
     }
+  }
 }
-    
