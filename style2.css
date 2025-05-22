@@ -254,6 +254,10 @@ body {
       flex-wrap: wrap;             /* Responsive: stacks on small screens */
       margin-top: 20px;
     }
+      
+    .highlighted-text {
+      color: #00c853; /* bright green highlight */
+    }
 
     footer {
       position: fixed;
