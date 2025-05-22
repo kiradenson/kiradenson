@@ -220,6 +220,8 @@ body {
       border-color: #f92a7d; /* hot pink border */
       width: 400px;           /* bigger size */
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     #special-one-parent {
