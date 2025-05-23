@@ -68,6 +68,10 @@ body {
       padding: 40px;
       padding-bottom: 80px; /* Add space so footer doesn't cover content */
     }
+    
+    .about-page .content-wrapper {
+      text-align: left;
+    }
 
     .button {
       display: inline-block;
