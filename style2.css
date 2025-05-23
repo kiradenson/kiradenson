@@ -69,8 +69,12 @@ body {
       padding-bottom: 80px; /* Add space so footer doesn't cover content */
     }
     
-    .about-page .content-wrapper {
+    .about-page main p {
       text-align: left;
+    }
+
+    .about-page main h2 {
+      text-align: center;
     }
 
     .button {
