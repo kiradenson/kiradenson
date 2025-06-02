@@ -68,7 +68,11 @@ body {
       padding: 40px;
       padding-bottom: 80px; /* Add space so footer doesn't cover content */
     }
-    
+
+    main h2 {
+      margin-bottom: 40px;
+    }
+
     .about-page main p {
       text-align: left;
     }
@@ -106,11 +110,9 @@ body {
     .icon-links {
       margin-top: 30px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
     .icon-links a {
@@ -128,7 +130,7 @@ body {
     .icon-wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      text-align: center;
     }
 
     .icon-label {
@@ -240,35 +242,96 @@ body {
     }
 
     .project-figure {
-      width: 150px;
-      margin: 0 auto;
+      flex: 0 1 300px;
+      max-width: 100%;
+      /* margin: 0 auto; */
       /* margin: 10px 20px 10x 0; */
       /* float: left; */
+      box-sizing: border-box;
       text-align: center; /* change to center if you prefer */
     }
 
     .project-caption {
+      white-space: normal; /* allows for line breaks */
+      display: block;
+      text-align: left; /* original is align center */
       font-size: 12px;
       color: #f92a7d; /* hot pink caption */
       margin-top: 10px;
       font-family: 'Press Start 2P', cursive;
       line-height: 1.4;
+      flex: 1 1 100%;
     }
 
     .image-row {
       display: flex;
-      justify-content: center;     /* Center the whole row */
+      justify-content: center;     /* Center the whole row - was space-between */
       gap: 40px;                   /* Space between the two images */
       flex-wrap: wrap;             /* Responsive: stacks on small screens */
       margin-top: 20px;
     }
-      
+
     .highlighted-text {
       color: #00c853; /* bright green highlight */
     }
 
+    .project-video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 3px solid #f92a7d;
+      border-radius: 8px;
+    }
+
+    .large-video {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #fff0fb; /*light pink background*/
+      border: 3px solid #f92a7d;
+      border-radius: 12px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: bold;
+      color: #f92a7d;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 80%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 2px solid #f92a7d;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff1493;
+    }
+
     footer {
-      position: fixed;
+      position: relative; /* original is position fixed */
       bottom: 0;
       left: 0;
       width: 100%;
@@ -325,6 +388,10 @@ body {
     .profile-and-content {
       flex-direction: column;
       align-items: center;
+    }
+    .large-video {
+      width: 100%; /* can make this larger if necessary - original is width: 600px */
+      max-width: 100%;
     }
 
     footer {
