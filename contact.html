@@ -5,28 +5,43 @@
   <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style2-v2.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
-    <h1>HI,I'M KIRA!</h1>
+    <h1>HI, I'M KIRA!</h1>
     <nav>
-      <a href="index.html"><i class="fas fa-home"></i>Home</a>
-      <a href="about.html"><i class="fas fa-user"></i>About</a>
-      <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
-      <a href="./portfolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a>
+      <a href="index-v2.html"><i class="fas fa-home"></i>Home</a>
+      <a href="about-v2.html"><i class="fas fa-user"></i>About</a>
+      <a href="contact-v2.html"><i class="fas fa-envelope"></i>Contact</a>
+      <a href="./portfolio-v2.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a>
     </nav>
   </header>
   <div class="content-wrapper">
     <main>
       <h2>Contact</h2>
-
-      <div class="divider"></div>
       
-      <p>You can reach me at kiraaden1@yahoo.com, or by connecting with me on LinkedIn!</p>
+      <div class="divider"></div>
+
+      <p>I’m always up for chatting about designs, collabs, or cool side quests. Just send me a message!</p>
     </main>
+
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form action="https://formspree.io/f/xnnvayaj" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    
+      <button type="submit">Send Message</button>
+    </form>
   </div>
+
   <footer>
     © 2025 Kira Denson
   </footer>
